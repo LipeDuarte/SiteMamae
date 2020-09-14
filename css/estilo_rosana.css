@@ -61,7 +61,6 @@ a:hover, a:active
 
 .legenda
 {
-    text-align: justify;
     width: 15em;
 }
 
@@ -132,6 +131,11 @@ a:hover, a:active
         max-width: 1200px;    
     }
 
+    .legenda
+    {
+        text-align: justify;
+    }
+    
     .logo
     {
         opacity: 0;
@@ -209,14 +213,19 @@ a:hover, a:active
         opacity: 0;
     }
 
-    .menu
+    .normal
     {  
-        min-height: 18vh;
         font-size: 0;
+    }
+
+    .menu
+    {
+        min-height: 18vh;
     }
 
     .agendamento
     {
+        color: white;
         margin-right: 2em;
     }
     
@@ -280,12 +289,10 @@ a:hover, a:active
         z-index: 1;
         top: 0;
         width: 100%;
-
     }
 
     .agendamento 
     {
-        color: whitesmoke;
         border: solid 1px whitesmoke;
     }
 
@@ -315,7 +322,12 @@ a:hover, a:active
     
     .titulo_principal h1
     {
-        font-size: 3em;
+        font-size: 2.5em;
+    }
+
+    .titulo_section h2
+    {
+        font-size: 2em;
     }
 
     .figura
@@ -349,6 +361,11 @@ a:hover, a:active
     {
         width: 250px;
         height: 250px;
+    }
+
+    .subtitulo h2
+    {
+        font-size: 2.5em;
     }
 }
 
