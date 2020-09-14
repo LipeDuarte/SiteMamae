@@ -1,0 +1,382 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+    scroll-behavior: smooth;
+}
+
+body
+{
+    color: #7B29A5;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../img/onda.png");
+    background-repeat: no-repeat;
+}
+
+a:hover, a:active
+{
+    text-decoration: none;
+    color: white;
+}
+
+.agendamento
+{
+    border: solid 2px;
+    border-radius: 0.5em;
+    border-color: whitesmoke;
+    text-decoration: none;
+    padding: 8px 8px;
+    font-size: 1.2em;
+}
+
+.botao
+{   
+    color: whitesmoke;
+    margin: 3em 2em;
+    padding: 0.5em 0.7em; 
+    border: solid 1px;
+    border-radius: 1.3em;
+    border-color:#7B29A5;
+    text-decoration: none;
+    text-align: center;
+    background-image: linear-gradient(to right,#7B29A5, #913ebb);
+    min-width:  160px;
+}
+
+.especial 
+{
+    color: #F3AF62;
+    opacity: 0;
+    animation: 4s ease 500ms animacaoEspecial forwards;
+}
+
+.inicio, .sobre
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.legenda
+{
+    text-align: justify;
+    width: 15em;
+}
+
+.titulo_principal
+{
+    margin-top: 10em;
+    opacity: 0;
+    animation: 3s ease 500ms animacaoTitulo forwards;
+}
+
+.titulo_principal h1
+{
+    font-weight: 800;
+}
+
+.titulo_section
+{
+    align-self: flex-start;
+    margin-bottom: 2em;
+}
+
+.titulo_section h2
+{
+    font-weight: 800;
+    font-size: 3em;
+}
+
+@keyframes animacaoTitulo 
+{
+  from {
+    transform: scale(1);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animacaoEspecial
+{
+  from {
+    transform: scale(1);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateX(0);
+    opacity: 1;
+  }
+}
+
+@media(min-width: 1425px)
+{
+    body 
+    {
+        font-size: 18px;
+    }
+
+    .agendamento
+    {
+        margin-right: 2em
+    }
+
+    .inicio, .sobre, .servicos, .contato
+    {   
+        margin-left: auto;
+        margin-right: auto;  
+        max-width: 1200px;    
+    }
+
+    .logo
+    {
+        opacity: 0;
+    }
+
+    .menu
+    {  
+        height: 12vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style: none;
+    }
+
+    .menu a
+    {
+        color: whitesmoke;
+        padding: 0.3em 1em;
+        font-size: 22px;
+        transition: text-shadow 1s;
+    }
+
+    .menu a:hover, .menu a:active
+    {
+        text-shadow: 0px 0px 10px #FDBA59;
+    }
+
+    .titulo_principal h1
+    {
+        font-size: 3em;
+    }
+
+    .figura
+    {
+        display: flex;
+    }
+
+    .figura p
+    {   
+        margin: 3em 0em;
+        min-width: 316px;
+        max-width: 300px;
+    }
+
+    .figura img
+    {
+        height: 501px;
+        width: 751px;
+    }
+
+    .foto_sobre
+    {
+        width: 500px;
+        height: 500px;
+    }
+    
+    .subtitulo h2
+    {
+        font-weight: 800;
+        font-size: 3em;
+    }
+}
+
+@media(max-width: 1425px)
+{
+    .inicio, .sobre   
+    {   
+        margin-left: auto;
+        margin-right: auto;  
+        max-width: 600px;    
+    }
+
+    .logo
+    {
+        opacity: 0;
+    }
+
+    .menu
+    {  
+        min-height: 18vh;
+        font-size: 0;
+    }
+
+    .agendamento
+    {
+        margin-right: 2em;
+    }
+    
+    .titulo_principal h1
+    {
+        font-size: 2em;
+    }
+
+    .figura
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .figura p
+    {   
+        margin: 3em 0em;
+        min-width: 300px;
+        max-width: 300px;
+    }
+
+    .figura img
+    {
+        height: 501px;
+        width: 751px;
+    }
+
+    .foto_sobre
+    {
+        width: 500px;
+        height: 500px;
+    }
+
+    .subtitulo h2
+    {
+        font-weight: bold;
+        font-size: 3em;
+    }
+    
+}
+
+@media(max-width: 625px)
+{
+    body 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url("img/rosana_nome.png");
+    }
+
+    nav
+    {
+        height: 4em;
+        background-color: #7B29A5;
+        padding: 1em;
+        display: flex;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        width: 100%;
+
+    }
+
+    .agendamento 
+    {
+        color: whitesmoke;
+        border: solid 1px whitesmoke;
+    }
+
+    .inicio, .sobre, .servicos, .contato  
+    {   
+        max-width: 250px; 
+        margin: 1em auto;
+    }
+
+    .logo
+    {
+        opacity: 1;
+        margin-left: 27px;
+    }
+
+    .normal
+    {  
+        font-size: 0;
+    }
+
+    .titulo_principal
+    {
+        color: #7B29A5;
+        margin-top: 5em;
+        margin-bottom: 3em;
+    }
+    
+    .titulo_principal h1
+    {
+        font-size: 3em;
+    }
+
+    .figura
+    {
+        color: #7B29A5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: auto;
+    }
+
+    .figura p
+    {   
+        margin: 3em 0em;
+        min-width: 300px;
+        max-width: 300px;
+    }
+
+    .figura img
+    {
+        height: 250px;
+        width: 350px;
+    }
+
+    .figura figcaption 
+    {
+        margin-bottom: 2em;
+    }
+
+    .foto_sobre
+    {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/*box-shadow: 4px 4px 5px 1px rgba(0, 0, 0, 0.507);
+}*/
+
+.cards
+{
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card
+{
+    margin:2em;
+    border: 3px rgba(182, 90, 203, 0.575) solid;
+}
+
+.card-body
+{
+    text-align: center;
+}
+
+.card-title
+{
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
