@@ -221,6 +221,11 @@ a:hover, a:active
 
 @media(max-width: 1425px)
 {
+    .card:hover
+    {
+        transform: scale(1.2) rotate(-2deg);
+    }
+
     .inicio, .sobre   
     {   
         margin-left: auto;
@@ -329,6 +334,11 @@ a:hover, a:active
         padding: 1em;
     }
 
+    .card:hover
+    {
+        transform: scale(1.2);
+    }
+
     .inicio, .sobre, .servicos, .contato  
     {   
         max-width: 350px; 
@@ -421,11 +431,6 @@ a:hover, a:active
     margin:2em;
     border: 3px rgba(182, 90, 203, 0.575) solid;
     transition: transform 700ms;
-}
-
-.card:hover
-{
-    transform: scale(1.2) rotate(-2deg);
 }
 
 .card-body
