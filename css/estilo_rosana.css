@@ -20,6 +20,12 @@ a:hover, a:active
     color: white;
 }
 
+ul 
+{
+    margin-bottom: 0 !important;
+    text-decoration: none;
+}
+
 .agendamento
 {
     border: solid 2px;
@@ -120,6 +126,17 @@ a:hover, a:active
   }
 }
 
+@keyframes animacaoMenu {
+    from {
+      transform: translateY(-20vh);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
 @keyframes animacaoEspecial
 {
   from {
@@ -189,7 +206,6 @@ a:hover, a:active
 
     .menu
     {  
-        height: 12vh;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -344,6 +360,11 @@ a:hover, a:active
     .titulo_section
     {
         margin-left: 2em;
+    }
+
+    .menu
+    {
+        height: 12vh;
     }
 
 }
