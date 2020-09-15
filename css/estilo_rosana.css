@@ -44,6 +44,20 @@ a:hover, a:active
     min-width:  160px;
 }
 
+.caixa_texto
+{
+    margin: 3em;
+    border: 3px solid rgba(182, 90, 203, 0.575);
+    padding: 3em;
+}
+
+.caixa_texto p
+{
+    text-align: justify;
+    max-width: 800px;
+    margin: 0.5 em auto;
+}
+
 .especial 
 {
     color: #F3AF62;
@@ -62,6 +76,12 @@ a:hover, a:active
 .legenda
 {
     width: 15em;
+}
+
+.nome
+{
+    font-size: 2em;
+    font-weight: 700;
 }
 
 .titulo_principal
@@ -205,7 +225,13 @@ a:hover, a:active
     {   
         margin-left: auto;
         margin-right: auto;  
-        max-width: 600px;    
+        max-width: 900px;    
+    }
+
+    .legenda
+    {
+        max-width: 200px;
+        text-align: justify;
     }
 
     .logo
@@ -277,6 +303,7 @@ a:hover, a:active
         flex-direction: column;
         justify-content: center;
         background-image: url("img/rosana_nome.png");
+        font-size: 1.2em;
     }
 
     nav
@@ -296,16 +323,27 @@ a:hover, a:active
         border: solid 1px whitesmoke;
     }
 
+    .caixa_texto
+    {
+        margin: auto;
+        padding: 1em;
+    }
+
     .inicio, .sobre, .servicos, .contato  
     {   
-        max-width: 250px; 
-        margin: 1em auto;
+        max-width: 350px; 
+        margin: auto;
     }
 
     .logo
     {
         opacity: 1;
         margin-left: 27px;
+    }
+
+    .nome
+    {
+        padding: 1em 0.4em;   
     }
 
     .normal
@@ -316,6 +354,7 @@ a:hover, a:active
     .titulo_principal
     {
         color: #7B29A5;
+        padding: 1em;
         margin-top: 5em;
         margin-bottom: 3em;
     }
@@ -369,9 +408,6 @@ a:hover, a:active
     }
 }
 
-/*box-shadow: 4px 4px 5px 1px rgba(0, 0, 0, 0.507);
-}*/
-
 .cards
 {
     padding: 2em;
@@ -384,6 +420,12 @@ a:hover, a:active
 {
     margin:2em;
     border: 3px rgba(182, 90, 203, 0.575) solid;
+    transition: transform 700ms;
+}
+
+.card:hover
+{
+    transform: scale(1.2) rotate(-2deg);
 }
 
 .card-body
@@ -396,4 +438,3 @@ a:hover, a:active
     font-weight: bold;
     margin-bottom: 1em;
 }
-
