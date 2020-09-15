@@ -144,6 +144,11 @@ a:hover, a:active
         margin-right: 2em
     }
 
+    .card:hover
+    {
+        transform: scale(1.2) rotate(-2deg);
+    }
+
     .inicio, .sobre, .servicos, .contato
     {   
         margin-left: auto;
