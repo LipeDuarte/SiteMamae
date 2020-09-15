@@ -132,7 +132,28 @@ a:hover, a:active
   }
 }
 
-@media(min-width: 1425px)
+@media(min-width: 2020px)
+{
+    body
+    {
+        background-image: none;
+    }
+
+    nav
+    {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        width: 100%;
+    }
+
+    .menu 
+    {
+        background-color: #7c29a5e8;
+    }
+}
+
+@media(min-width: 1225px)
 {
     body 
     {
@@ -224,7 +245,7 @@ a:hover, a:active
     }
 }
 
-@media(max-width: 1425px)
+@media(max-width: 1225px)
 {
     .card:hover
     {
@@ -256,7 +277,10 @@ a:hover, a:active
 
     .menu
     {
-        min-height: 18vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        min-height: 5vh;
     }
 
     .agendamento
@@ -264,10 +288,16 @@ a:hover, a:active
         color: white;
         margin-right: 2em;
     }
+
+    .titulo_principal
+    {
+        margin-top: 15em;
+        margin-left: 2em;
+    }
     
     .titulo_principal h1
     {
-        font-size: 2em;
+        font-size: 3em;
     }
 
     .figura
@@ -303,6 +333,19 @@ a:hover, a:active
         font-size: 3em;
     }
     
+}
+
+@media(min-width: 625px)
+{
+    .agendamento
+    {
+        margin-top: 1em;
+    }
+    .titulo_section
+    {
+        margin-left: 2em;
+    }
+
 }
 
 @media(max-width: 625px)
