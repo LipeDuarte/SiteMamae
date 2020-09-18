@@ -14,10 +14,15 @@ body
     background-repeat: no-repeat;
 }
 
+b
+{
+    font-weight: 800;
+}
+
 a:hover, a:active
 {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
 }
 
 ul 
@@ -52,16 +57,60 @@ ul
 
 .caixa_texto
 {
-    margin: 3em;
+    margin: 3em auto;
     border: 3px solid rgba(182, 90, 203, 0.575);
     padding: 3em;
 }
 
 .caixa_texto p
 {
-    max-width: 800px;
-    margin: 0.5 em auto;
+    margin: 0.5em auto;
 }
+
+.clique
+{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.contato ul 
+{
+    list-style: none;
+    font-size: 1.5em;
+}
+
+.meios
+{
+    font-size: 1.5em;
+}
+
+.contatos a
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: currentColor;
+    
+}
+
+.contatos a p
+{
+    text-align: left;
+    margin-left: 1em;
+    transition: 1.2s ease-in text-shadow;
+}
+
+.contatos a p:hover
+{
+    text-shadow: 0px 0px 10px rgba(243, 175, 98, 0.856);
+}
+
+.contatos a i 
+{
+    font-size: 1.5em;
+}
+
 
 .especial 
 {
@@ -83,10 +132,28 @@ ul
     width: 15em;
 }
 
+.link
+{
+    font-weight: 800;
+    color: currentColor;
+    transition: text-shadow 0.8s, color 1s;
+}
+
+.link:hover, .link:active
+{
+    color: #F3AF62;
+    text-shadow: 0px 0px 50px rgba(124, 41, 165, 0.768);
+}
+
 .nome
 {
     font-size: 2em;
     font-weight: 700;
+}
+
+.texto li
+{
+    padding-bottom: 3em;
 }
 
 .titulo_principal
@@ -104,14 +171,65 @@ ul
 .titulo_section
 {
     align-self: flex-start;
-    margin-top: 13vh;
-    margin-bottom: 2em;
+    margin: 4em 0;
 }
 
 .titulo_section h2
 {
     font-weight: 800;
     font-size: 3em;
+}
+
+.servicos 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.servicos .subtitulo h2
+{
+    font-size: 1.5em;
+    line-height: 5px;
+    text-align: left;
+}
+
+.servicos .caixa_texto p
+{
+    transition: text-shadow 1.2s;
+}
+
+.servicos .caixa_texto p:hover, .servicos .caixa_texto p:active
+{
+    text-shadow: 0px 0px 10px #F3AF62;
+}
+
+.topicos li
+{
+	margin: 0;
+	list-style: none;
+	background-image: url("../img/checkmark.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+    background-size: 20px;
+    padding: 0.5em;
+    padding-left: 1.8em;
+    text-align: left;
+}
+
+@keyframes animacaoCaixa
+{
+    from
+    {
+        transform: translateY(-10vw), scale(0.5);
+        opacity: 0;
+    }
+    to 
+    {
+        transform: translateY(0), scale(1);
+        opacity: 1;
+    }
 }
 
 @keyframes animacaoTitulo 
@@ -126,7 +244,8 @@ ul
   }
 }
 
-@keyframes animacaoMenu {
+@keyframes animacaoMenu 
+{
     from {
       transform: translateY(-20vh);
       opacity: 0;
@@ -135,7 +254,7 @@ ul
       transform: translateY(0);
       opacity: 1;
     }
-  }
+}
 
 @keyframes animacaoEspecial
 {
@@ -186,8 +305,13 @@ ul
     {
         transform: scale(1.2) rotate(-2deg);
     }
+    
+    .caixa_texto p
+    {
+        text-align: justify;
+    }
 
-    .inicio, .sobre, .servicos, .contato
+    .inicio, .sobre, .servicos, .contato, .mais
     {   
         margin-left: auto;
         margin-right: auto;  
@@ -268,7 +392,7 @@ ul
         transform: scale(1.2) rotate(-2deg);
     }
 
-    .inicio, .sobre   
+    .inicio, .sobre, .servicos, .contato, .mais  
     {   
         margin-left: auto;
         margin-right: auto;  
@@ -302,7 +426,6 @@ ul
     .agendamento
     {
         color: white;
-        margin-right: 2em;
     }
 
     .titulo_principal
@@ -315,7 +438,7 @@ ul
     {
         font-size: 3em;
     }
-
+    
     .figura
     {
         display: flex;
@@ -353,19 +476,30 @@ ul
 
 @media(min-width: 625px)
 {
+    a 
+    {
+        color: white;
+    }
     .agendamento
     {
         margin-top: 1em;
     }
-    .titulo_section
+
+    .caixa_texto
     {
-        margin-left: 2em;
+        width: 900px;
     }
 
     .menu
     {
         height: 12vh;
     }
+
+    .menu_responsivo
+    {
+        visibility: hidden;
+    }
+
 
 }
 
@@ -384,7 +518,6 @@ ul
     {
         height: 4em;
         background-color: #7B29A5;
-        padding: 1em;
         display: flex;
         position: fixed;
         z-index: 1;
@@ -396,12 +529,18 @@ ul
     {
         border: solid 1px whitesmoke;
     }
+    
+    .agendamento a:hover
+    {
+        color: white        
+    }
 
     .caixa_texto
     {
         margin: auto;
         padding: 1em;
-        text-align: left;        
+        text-align: left;  
+        max-width: 350px;      
     }
 
     .card:hover
@@ -409,7 +548,7 @@ ul
         transform: scale(1.2);
     }
 
-    .inicio, .sobre, .servicos, .contato  
+    .inicio, .sobre, .servicos, .contato, .mais
     {   
         max-width: 350px; 
         margin: auto;
@@ -424,6 +563,11 @@ ul
     .legenda
     {
         text-align: left;
+    }
+
+    .menu_responsivo
+    {
+        visibility: visible !important;
     }
 
     .nome
@@ -489,7 +633,17 @@ ul
 
     .subtitulo h2
     {
+        text-align: center !important;
         font-size: 2.5em;
+    }
+    .subtitulo
+    {
+        text-align: center !important;
+    }
+
+    .servicos .subtitulo h2 
+    {
+        line-height: normal;
     }
 }
 
@@ -517,4 +671,16 @@ ul
 {
     font-weight: bold;
     margin-bottom: 1em;
+}
+
+button
+{
+    display: block;
+    color: currentColor;
+}
+
+button:focus
+{
+    box-shadow: 0 0 0 0;
+    outline: 0;
 }

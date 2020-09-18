@@ -6,8 +6,9 @@
     <title> Rosana Moreira </title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="icon" type="icon/.ico" href="img/rosana.ico" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo_rosana.css">    
+    <script src="https://kit.fontawesome.com/4f82470a7c.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -18,12 +19,13 @@
             <li class="normal"><a href="#servicos">Serviços</a></li>
             <li class="normal"><a href="#contato">Contato</a></li>
             <li class="normal"><a href="#mais">Saiba Mais!</a></li>
+            <li class="menu_responsivo">a</li>
             <li><a class ="agendamento" href="https://api.whatsapp.com/send?phone=5532991666322&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="botao">Agendar Consulta</a></li> 
         </ul>
     </nav>
     <section class="inicio" id="inicio">
         <div class="titulo_principal">
-            <h1>Se você procura o <t class="especial">bem-estar,</t> é preciso conhecer e gerenciar melhor suas <t class="especial">emoções</t></h1>
+            <h1>Se você procura  <t class="especial">bem-estar,</t> é preciso conhecer e gerenciar melhor suas <t class="especial">emoções</t></h1>
         </div>
         <figure class="figura">
             <figcaption>
@@ -89,29 +91,81 @@
     <section class="sobre" id="sobre">
         <div class="titulo titulo_section"><h2> Sobre </h2></div>
         <img src="img/foto_sobre.png" alt="Foto da psicóloga Rosana Moreira" class="foto_sobre">
-        <h2 class="nome"> Rosana Moreira</h2>
         <figure class="caixa_texto shadow-lg mb-5 bg-white rounded">
-          
+          <h2 class="nome"> Rosana Moreira</h2>
           <p> 
             Psicóloga Clínica, Terapeuta Cognitiva, Orientadora Profissional, priorizando leveza, afeto e
             liberdade de ser.
           </p>
 
           <p>
-            Me formei em 2005 no CES/JF - Centro de Ensino Superior de Juiz de Fora ou Uniacademia como é conhecido agora. Nestes anos atuei
-            na prática clínica com atendimentos a adolescentes e adultos, atuei também na área de
-            avaliação psicológica e de gestão de pessoas em instituição de ensino e hospitalar.
-            Atualmente, me dedico ao atendimento individual em psicoterapia e a orientação
-            profissional e de carreira, para jovens de primeira escolha e para reorientação profissional.
+            Me formei em 2005 no CES - Centro de Ensino Superior de Juiz de Fora. Sou especialista em
+            Terapias Cognitivas, com Formação em Terapia Cognitiva Comportamental. Atuo na
+            prática clínica com atendimentos a adolescentes e adultos, realizando trabalho de
+            acolhimento, escuta e análise de processos afetivos. Estou cursando Formação de Terapia de Casais
+            e Família.
+            Tenho experiência na área de avaliação psicológica e de gestão de pessoas em instituição de
+            ensino e hospitalar. Atualmente, me dedico ao atendimento individual em psicoterapia -
+            Transtornos de ansiedade e depressão, bem como, à orientação profissional e de carreira,
+            para jovens de primeira escolha e para reorientação profissional
           </p>
         </figure>
         
 
     </section>
     <section class="servicos" id="servicos">
-      <div class="titulo titulo_section"><h2> Serviços </h2></div>
-    </section>
 
+      <div class="titulo titulo_section"><h2> Serviços </h2></div>
+        <button class="caixa_texto shadow-lg mb-5 bg-white rounded" onclick="abrir1()" ondblclick="fechar1()">
+          <div class="subtitulo">
+            <h2> Atendimento Individual em Psicoterapia</h2>
+            <p class="clique"> CLIQUE AQUI</p>
+          </div>
+          <div id="display_1" class="texto" style="display: none;">
+          <ul class="topicos">
+            <li>Psicoterapia de Adolescentes e Adultos</li>
+            <li>Ansiedade, relação com o trabalho e âmbito profissional;</li>
+            <li>Transtorno de Ansiedade - Depressão, Pânico, Medo e Fobia</li>
+            <li>Conflitos Socias – Insegurança, Dificuldade em Falar em Público</li>
+            <li>Agressividade, Autocontrole, Autoconhecimento</li>
+            <li>Inteligência Emocial</li>
+            <li>Habilidades Sociais</li>
+          </ul>
+          </div>
+        </button>   
+        <button class="caixa_texto shadow-lg mb-5 bg-white rounded" onclick="abrir2()" ondblclick="fechar2()">
+          <div class="subtitulo">
+            <h2> Orientação Profissional e de Carreira</h2>
+            <p class="clique"> CLIQUE AQUI</p>
+          </div>
+          <div id="display_2" class="texto" style="display: none;">
+            <ul class="topicos">
+              <li>Orientação para jovens na primeira escolha profissional</li>
+              <li>Reorientação para mudança de carreira</li>
+              <li>Acesse <a href="www.ahead.com" class="link"> ahead.com </a> para informações mais completas</li>
+            </ul>
+          </div>
+        </button>  
+    </section>
+    <section class="contato" id="contato">
+      <div class="titulo titulo_section"><h2> Contato </h2></div>
+      <div class="caixa_texto shadow-lg mb-5 bg-white rounded">
+        <p class="meios">Para entrar em <b>contato</b>, use um dos <b>links abaixo: </b></p>
+        <ul class="contatos">
+          <li><a target="_blank" href="https://www.instagram.com/rmoreirapsi"><i class="fab fa-instagram"></i> <p>@rmoreirapsi</p></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/rosana-moreira-61808647/"><i class="fab fa-linkedin-in"></i> <p> Rosana Moreira</p></a></li>
+          <li><a target="_blank" href="https://api.whatsapp.com/send?phone=5532991666322"><i class="fab fa-whatsapp"></i><p> Mande uma mensagem pelo WhatsApp </p></a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="mais" id="mais">
+      <div class="titulo_section titulo"><h2> Saiba Mais </h2></div>
+      <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/8bce6826bbbd5caa964941a8bf23fdd8.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+
+
+
+    </section>
+    
     <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
