@@ -549,42 +549,37 @@ ul
     }
 
     .contato ul 
-{
-    list-style: none;
-    font-size: 1.5em;
-}
+    {
+        list-style: none;
+        font-size: 1.5em;
+    }
 
-.meios
-{
-    font-size: 1.5em;
-}
+    .contatos a
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: currentColor;
+        
+    }
 
-.contatos a
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    color: currentColor;
-    
-}
+    .contatos a p
+    {
+        text-align: left;
+        margin-left: 1em;
+        transition: 1.2s ease-in text-shadow;
+    }
 
-.contatos a p
-{
-    text-align: left;
-    margin-left: 1em;
-    transition: 1.2s ease-in text-shadow;
-}
+    .contatos a p:hover
+    {
+        text-shadow: 0px 0px 10px rgba(243, 175, 98, 0.856);
+    }
 
-.contatos a p:hover
-{
-    text-shadow: 0px 0px 10px rgba(243, 175, 98, 0.856);
-}
-
-.contatos a i 
-{
-    font-size: 1.5em;
-}
+    .contatos a i 
+    {
+        font-size: 1.5em;
+    }
 
     .inicio, .sobre, .servicos, .contato, .mais
     {   
@@ -611,11 +606,18 @@ ul
     .nome
     {
         padding: 1em 0.4em;   
+        text-align: center;
     }
 
     .normal
     {  
         font-size: 0;
+    }
+  
+    .meios
+    {
+        font-size: 1.5em;
+        text-align: center;
     }
 
     .titulo_principal
