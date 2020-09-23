@@ -59,3 +59,15 @@ function abrir2()
         display_2.style.animation = "animacaoCaixa 2s backwards"
     }
 }
+
+const menu = window.document.querySelector(".menu_mobile")
+const b_menu_open = window.document.querySelector(".b_menu_open")
+const b_menu_close = window.document.querySelector(".b_menu_close")
+b_menu_open.addEventListener('click', function()
+{
+    menu.classList.add("menu_open")
+})
+b_menu_close.addEventListener('click', function()
+{
+    menu.classList.remove("menu_open")
+})

@@ -79,6 +79,60 @@ ul
     font-size: 1.5em;
 }
 
+.duvidas-primeiro, .duvidas-segundo
+{
+    display: flex;
+    align-items: center;
+}
+
+.text-1 
+{
+    font-size: 1em;
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 1em;
+    padding-bottom: 2em;
+}
+
+.text-1 p, .text-2 p
+{
+    max-width: 500px;
+}
+
+.text-2
+{
+    font-size: 1em;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+    padding-right: 1em;
+}
+ 
+
+.titulo-1
+{
+    font-weight: 800;
+    font-size: 2.5em;
+}
+
+.titulo-2
+{
+    max-width: 900px;
+}
+
+.topo 
+{
+    padding-top: 5em;
+}
+
+.topo h2
+{
+    text-align: center;
+    font-size: 2em !important;
+}
+
 .meios
 {
     font-size: 1.5em;
@@ -151,6 +205,10 @@ ul
     font-weight: 700;
 }
 
+.numero
+{
+    font-size: 16em;
+}
 .texto li
 {
     padding-bottom: 3em;
@@ -178,6 +236,12 @@ ul
 {
     font-weight: 800;
     font-size: 3em;
+}
+
+.text
+{
+    max-width: 880px;
+    margin: 2em auto;
 }
 
 .servicos 
@@ -495,7 +559,17 @@ ul
         height: 12vh;
     }
 
-    .menu_responsivo
+    .menu_mobile
+    {
+        visibility: hidden;
+    }
+
+    .numero-pc
+    {
+        visibility: visible;
+    }
+
+    .numero-mobile
     {
         visibility: hidden;
     }
@@ -519,10 +593,68 @@ ul
         height: 4em;
         background-color: #7B29A5;
         display: flex;
+        align-items: center;
+        justify-content: flex-start;
         position: fixed;
         z-index: 1;
         top: 0;
         width: 100%;
+    }
+
+    .menu
+    {
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .b_menu
+    {
+        display: block;
+        background-repeat: no-repeat;
+        padding: 20px 70px;
+    }
+
+    .b_menu_open
+    {
+        background-position: 20px 12px;
+        background-image: url("../img/hamburguer.svg");
+    }
+
+    .b_menu_close
+    {
+        background-position: 5px 0;
+        background-image: url("../img/x.svg")
+    }
+
+    .menu_mobile
+    {
+        background-color: #7B29A5;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: transform 200ms linear;
+    }
+
+    .menu_mobile li
+    {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 0.7em;
+        padding: 20px 15px;
+        border-bottom: solid 2px rgba(255, 255, 255, 0.596);
+    }
+
+    .menu_mobile a 
+    {
+        color: whitesmoke;
+    }
+
+    .menu_open
+    {
+        transform: translateX(0);
     }
 
     .agendamento 
@@ -603,11 +735,6 @@ ul
         text-align: left;
     }
 
-    .menu_responsivo
-    {
-        visibility: visible !important;
-    }
-
     .nome
     {
         padding: 1em 0.4em;   
@@ -618,7 +745,22 @@ ul
     {  
         font-size: 0;
     }
-  
+
+    .numero 
+    {
+        font-size: 15em;
+    }
+    .numero-pc
+    {
+        font-size: 0;
+        visibility: hidden;
+    }
+
+    .numero-mobile
+    {
+        visibility: visible;
+    }
+    
     .meios
     {
         font-size: 1.5em;
@@ -696,6 +838,17 @@ ul
     {
         line-height: normal;
     }
+
+    .text 
+    {
+        flex-direction: column;
+    }
+
+    .mais p, .mais b, .mais h2
+    {
+        text-align: center;
+    }
+
 }
 
 .cards
