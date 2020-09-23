@@ -288,6 +288,17 @@ ul
     text-align: left;
 }
 
+.fim
+{
+    min-height: 40vh;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(124, 41, 165, 0.815);
+}
+
 @keyframes animacaoCaixa
 {
     from
@@ -619,7 +630,7 @@ ul
     {
         display: block;
         background-repeat: no-repeat;
-        padding: 20px 70px;
+        padding: 20px 100px;
     }
 
     .b_menu_open
