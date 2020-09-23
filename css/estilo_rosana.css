@@ -572,6 +572,7 @@ ul
     .numero-mobile
     {
         visibility: hidden;
+        font-size: 0;
     }
 
 
