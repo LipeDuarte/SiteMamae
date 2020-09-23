@@ -85,6 +85,12 @@ ul
     align-items: center;
 }
 
+.diferentao
+{
+    display: flex;
+    align-items: center;
+}
+
 .text-1 
 {
     font-size: 1em;
